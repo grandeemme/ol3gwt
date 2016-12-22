@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Implementation-Vendor: ${Implementation-Vendor}
+Implementation-Title: ${Implementation-Title}
+Implementation-Version: ${Implementation-Version}
