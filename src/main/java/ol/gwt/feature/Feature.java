@@ -49,6 +49,10 @@ public class Feature extends Object {
 		this.setStyle(styles);
 	}-*/;
 
+	public final native Style getStyle()/*-{
+		return this.getStyle();
+	}-*/;
+
 	public final native JsArray<Style> getStyles()/*-{
 		return this.getStyle();
 	}-*/;

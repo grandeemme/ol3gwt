@@ -3,4 +3,5 @@
 	<inherits name="com.google.gwt.json.JSON" />
 	<inherits name="com.google.gwt.resources.Resources" />
 
+	<source path='gwt' />
 </module>
