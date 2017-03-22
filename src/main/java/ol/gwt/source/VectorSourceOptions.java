@@ -2,6 +2,7 @@ package ol.gwt.source;
 
 import com.google.gwt.core.client.JsArray;
 
+import ol.gwt.Collection;
 import ol.gwt.feature.Feature;
 import ol.gwt.format.FeatureFormat;
 
@@ -18,6 +19,10 @@ public class VectorSourceOptions extends AbstractVectorSourceOptions {
 	}-*/;
 
 	public final native void setFeatures(JsArray<Feature> features)/*-{
+		this.features = features;
+	}-*/;
+
+	public final native void setFeatureCollection(Collection<Feature> features)/*-{
 		this.features = features;
 	}-*/;
 

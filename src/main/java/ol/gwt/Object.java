@@ -12,15 +12,15 @@ public abstract class Object extends Observable {
 	}-*/;
 
 	public native final void set(String key, JavaScriptObject prop)/*-{
-		this.set(key , prop);
+		this.set(key, prop);
 	}-*/;
 
 	public native final void set(String key, String prop)/*-{
 		this.set(key, prop);
 	}-*/;
 
-	public final String getString(String key) {
-		JavaScriptObject j = get(key);
-		return j != null ? j.toString() : null;
-	}
+	public native final String getString(String key)/*-{
+		var value = this.get(key);
+		return  typeof value === 'string' ? value : null ;
+	}-*/;
 }

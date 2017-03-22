@@ -2,6 +2,7 @@ package ol.gwt.source;
 
 import com.google.gwt.core.client.JsArray;
 
+import ol.gwt.Collection;
 import ol.gwt.Coordinate;
 import ol.gwt.Extent;
 import ol.gwt.feature.Feature;
@@ -42,6 +43,10 @@ public abstract class AbstractVectorSource extends Source {
 
 	public final native JsArray<Feature> getFeatures()/*-{
 		return this.getFeatures();
+	}-*/;
+
+	public final native Collection<Feature> getFeaturesCollection()/*-{
+		return this.getFeaturesCollection();
 	}-*/;
 
 	public final native JsArray<Feature> getFeaturesAtCoordinate(Coordinate coordinate)/*-{

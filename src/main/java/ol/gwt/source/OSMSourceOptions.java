@@ -10,35 +10,48 @@ import ol.gwt.Attribution;
  */
 public class OSMSourceOptions extends JavaScriptObject {
 
-    protected OSMSourceOptions() {
-    }
+	protected OSMSourceOptions() {
+	}
 
-    public static native final OSMSourceOptions create()/*-{
-        return {};
-    }-*/;
+	public static native final OSMSourceOptions create()/*-{
+		return {};
+	}-*/;
 
-    /** Sets the attributions
-     *
-     * @param attributions attributions
-     */
-    public final native void setAttributions(JsArray<Attribution> attributions)/*-{
-        this.attributions = attributions;
-    }-*/;
+	/**
+	 * Sets the attributions
+	 *
+	 * @param attributions
+	 *            attributions
+	 */
+	public final native void setAttributions(JsArray<Attribution> attributions)/*-{
+		this.attributions = attributions;
+	}-*/;
 
-    /** Sets the cross origin setting for image requests. Default is 'anonymous'
-     *
-     * @param crossOrigin cross origin setting
-     */
-    public final native void setCrossOrigin(String crossOrigin)/*-{
-        this.crossOrigin = crossOrigin;
-    }-*/;
+	public final native void setAttributions(Attribution[] attributions)/*-{
+		this.attributions = attributions;
+	}-*/;
 
-    /** Sets the max zoom level for the source
-     *
-     * @param maxZoom maximum zoom level
-     */
-    public final native void setMaxZoom(int maxZoom)/*-{
-        this.maxZoom = maxZoom;
-    }-*/;
+	/**
+	 * Sets the cross origin setting for image requests. Default is 'anonymous'
+	 *
+	 * @param crossOrigin
+	 *            cross origin setting
+	 */
+	public final native void setCrossOrigin(String crossOrigin)/*-{
+		this.crossOrigin = crossOrigin;
+	}-*/;
 
+	/**
+	 * Sets the max zoom level for the source
+	 *
+	 * @param maxZoom
+	 *            maximum zoom level
+	 */
+	public final native void setMaxZoom(int maxZoom)/*-{
+		this.maxZoom = maxZoom;
+	}-*/;
+
+	public final native void setUrl(String url)/*-{
+		this.url = url;
+	}-*/;
 }
