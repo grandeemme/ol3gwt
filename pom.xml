@@ -37,14 +37,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
-			<name>engsanapp1-releases</name>
-			<url>http://161.27.213.60:9116/artifactory/libs-release-local</url>
+			<id>mvn-eng-releases</id>
+			<url>http://161.27.202.29:8100/repository/mvn-eng-releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
-			<name>engsanapp1-snapshots</name>
-			<url>http://161.27.213.60:9116/artifactory/libs-snapshot-local</url>
+			<id>mvn-eng-snapshots</id>
+			<url>http://161.27.202.29:8100/repository/mvn-eng-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
