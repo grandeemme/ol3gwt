@@ -13,6 +13,14 @@ public abstract class Observable extends JavaScriptObject {
 	public final native void unByKey(String key)/*-{
 		this.unByKey(key);
 	}-*/;
+	
+	/**
+	* Increases the revision counter and dispatches a 'change' event.
+	* @api
+	*/
+	public final native void changed( )/*-{
+		this.changed( );
+	}-*/;
 
 	public final <T extends Event> void on(String type, Listener<T> listener) {
 		on(type, listener, null);

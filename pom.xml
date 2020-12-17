@@ -38,11 +38,11 @@
 	<distributionManagement>
 		<repository>
 			<id>mvn-eng-releases</id>
-			<url>http://161.27.202.29:8100/repository/mvn-eng-releases</url>
+			<url>http://161.27.202.100:8081/repository/mvn-eng-releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>mvn-eng-snapshots</id>
-			<url>http://161.27.202.29:8100/repository/mvn-eng-snapshots</url>
+			<url>http://161.27.202.100:8081/repository/mvn-eng-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 

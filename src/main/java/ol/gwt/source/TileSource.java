@@ -14,4 +14,8 @@ public abstract class TileSource extends Source {
 	public final native TileGrid getTileGrid()/*-{
 		return this.getTileGrid();
 	}-*/;
+	
+	public final native void clear()/*-{
+		this.clear();
+	}-*/;
 }

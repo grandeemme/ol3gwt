@@ -19,4 +19,11 @@ public abstract class Source extends   ol.gwt.Object{
     public final native String getState()/*-{
         return this.getState();
     }-*/;
+    
+    /**
+     * Refreshes the source. The source will be cleared, and data from the server will be reloaded.
+     */
+    public final native String refresh()/*-{
+    	return this.refresh();
+	}-*/;
 }

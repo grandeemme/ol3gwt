@@ -5,6 +5,7 @@ import com.google.gwt.core.client.JsArray;
 
 import ol.gwt.Collection;
 import ol.gwt.feature.Feature;
+import ol.gwt.source.VectorSource;
 import ol.gwt.style.Style;
 
 /**
@@ -41,4 +42,13 @@ public class ModifyInteractionOptions extends JavaScriptObject {
     public final native void setFeatures(Collection<Feature> features)/*-{
         this.features=features;
     }-*/;
+    
+	/**
+	 * Sets destination source for the drawn features
+	 *
+	 * @param source
+	 */
+	public final native void setSource(VectorSource source)/*-{
+		this.source = source;
+	}-*/;
 }
